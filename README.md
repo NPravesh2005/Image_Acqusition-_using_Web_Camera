@@ -45,8 +45,8 @@ import numpy as np
 import cv2
 cap=cv2.VideoCapture(0)
 ret,frame=cap.read()
-cv2.imshow('video_Aankarsh',frame)
-cv2.imwrite('video_Aankarsh.jpg',frame)
+cv2.imshow('video_Pravesh',frame)
+cv2.imwrite('video_Pravesh.jpg',frame)
 cv2.waitKey(10000)
 cap.release()
 cv2.destroyAllWindows()
@@ -66,8 +66,8 @@ image[:height//2, width//2:]=small_frame
 image[height//2:, width//2:]=small_frame
 cv2.imshow('',image)
 cv2.waitKey(5000)
-image_dict={'captured_Aankarsh1':image}
-cv2.imwrite('captured_Aankarsh1.jpg',image)
+image_dict={'captured_Pravesh1':image}
+cv2.imwrite('captured_Pravesh1.jpg',image)
 cap.release()
 cv2.destroyAllWindows()
 
@@ -88,8 +88,8 @@ while True:
     image[height//2:, :width//2]=small_frame
     image[:height//2, width//2:]=small_frame
     image[height//2:, width//2:]=cv2.rotate(small_frame,cv2.ROTATE_180)
-    cv2.imshow('Aankarsh_split',image)
-    cv2.imwrite('Aankarsh_split.jpg',image)
+    cv2.imshow('Pravesh_split',image)
+    cv2.imwrite('Pravesh_split.jpg',image)
     if cv2.waitKey(1) == ord('q'):
         break
 cap.release()
